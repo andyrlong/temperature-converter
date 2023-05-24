@@ -12,7 +12,7 @@ def store_temp(get_temp):
 
 # Temperature conversion
 def convert(label, input):
-   temp = input.get()
+    temp = input.get()
 
    # Convert from celsius to fahrenheit
    if temp_value == 'Celsius':    
