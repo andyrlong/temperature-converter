@@ -24,6 +24,7 @@ def convert(label, input):
         # Convert from fahrenheit to celsius
         if temp_value == 'Fahrenheit':
             c = float((float(temp) * 9 / 5 ) + 32)
+            label.config(text ="%.1f Celsius" % c)
             messagebox.showinfo("Temperature Converter",
                             "Successfully converted to Celsius ", )
             return
