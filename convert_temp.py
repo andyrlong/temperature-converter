@@ -59,10 +59,10 @@ var.set(dropDownList[0])
 drop_down.grid(row = 1, column = 2)
  
 # Button widget
-call_convert = partial(convert, result_label,
+convert = partial(convert, result_label,
                        inputNumber)
 result_button = tk.Button(root, text ="Convert",
-                          command = call_convert)
+                          command = convert)
 result_button.grid(row = 2, columnspan = 2)
  
 # Infitinte loop
